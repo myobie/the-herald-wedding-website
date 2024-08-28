@@ -1,0 +1,119 @@
+body {
+	font: 62.5% "Lucida Grande", Lucida, Verdana, sans-serif;
+	width: 600px;
+	margin: 0 auto;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+h2, h3 {
+	color: #7f7f7f;
+	margin-bottom: -0.3em;
+	margin-top: 1em;
+	font: 3em/1em Palatino, "Times New Roman", Georgia, Times, serif;
+	letter-spacing: -1px;
+}
+h3 {
+	font-size: 1.4em;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#map {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border: 1px solid #e6e6e6;
+}
+
+#jn {
+	position: absolute;
+	width: 300px;
+	height: 15em;
+	background: url(images/monogram.gif) center center no-repeat;
+	text-indent: -9999px;
+}
+
+#wedding, #datetime {
+	width: 300px;
+	margin-left: 300px;
+	margin-bottom: 0.2em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 1.8em;
+}
+
+#wedding {
+	display: none;
+}
+
+#reception, #receptionloc {
+	clear: left;
+	width: 300px;
+	margin-left: 300px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	line-height: 1.8em;
+}
+
+#reception {
+	margin-top: 0;
+}
+
+#airport {
+	border: 1px solid #fffaa4;
+	width: 556px;
+	margin: 0;
+	padding: 10px;
+	padding-left: 34px;
+	background: #fffaa4 url(images/info-bullet.gif) 8px center no-repeat;
+}
+
+#middlestuff, #endstuff {
+	width: 280px;
+	float: left;
+	padding: 10px;
+}
+
+#middlestuff {
+	margin-left: 300px;
+}
+
+h4 {
+	margin: 0;
+	font-size: 1.1em;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	font-size: 1.1em;
+}
+
+ul em {
+	display: block;
+	font-size: 1.2em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+li {
+	margin: .7em 0;
+}
+
+#endstuff {
+	margin-left: -600px;
+}
+
+#rsvpblock {
+	color: green;
+	font: italic 1.2em Georgia, "Times New Roman", Times, serif;
+	border: #d5fccb solid 8px;
+	padding: 0 10px;
+}
+
+#rsvp, #lodginginfo {
+	margin-top: 0;
+}
+
+#rsvp {
+	color: green;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Nathan &amp; Jenny Herald's Wedding</title>
+	
+	<script src="http://maps.google.com/maps?file=api&amp;v=1&amp;key=ABQIAAAAqPE2AeXQw4UEtCRQfgA7OxQYXhZOOVnE3ky9mBj39EY5ZeLEnhRDqv_YwcDXvaCGZYJKU2HuLzMlAg" type="text/javascript"></script>
+	
+	<link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+</head>
+
+<body>
+
+	<h1 id="jn">Jenny and Nathan Herald</h1>
+	
+	<!-- <h2 id="nav">navigation</h2>
+	<ul>
+		<li>wedding day schedule</li>
+		<li>traveling to blacksburg</li>
+		<li>where to stay</li>
+		<li>how to RSVP</li>
+	</ul> -->
+	
+	<h2 id="wedding">the wedding</h2>
+	<p id="datetime">mr. and mrs. nathan andrew herald<br />
+	request the honor of your presence<br />
+	at the reaffirmation of<br />
+	their wedding vows<br />
+	saturday, the eighth of april<br />
+	at ten o’clock in the morning<br />
+	in war memorial chapel<br />
+	blacksburg, va</p>
+	
+	<h2 id="reception">the reception</h2>
+	<p id="receptionloc">we also have the honor to invite you<br />
+	to a lunch and dance reception<br />
+	at eleven o’clock in the morning<br />
+	in lane stadium<br />
+	blacksburg, va</p>
+	
+	<h2 id="travelinfo">the travel info</h2>
+	<p id="driving">Get driving directions to Blacksburg from <a href="http://www.mapquest.com/maps/map.adp?email=1&amp;mapdata=UAm0U3b9NY0uRgi%252f4RTJZ%252byw7nnUQhpMw0zfiI7%252feW%252bSMQFwjS1W40H%252bh%252bA7QcOVOaPcDvxbhIt%252bs1qZJn%252b3WaW1wVn%252b%252bMKKyf2A78O%252fyM%252ffq6o7IxWFaaoN9Qf2zaKx3fCRxy7aOJlVIlcQOUaigx0ioaI%252bo3yLpnqn2XUqNt0eHCq%252bFR75eBDdAKjfMWZNU8dIH6fMH56h1P9BACP2xQIbsyijZQZAS%252bzYTSTvp%252bARkULdCQ4s8S34H2jzJZ9DoxfHzprSj06zUpUMkquHgl39DSGrbpfvfa9Z5%252bpucmwM9iqMBsGSD2kemxz%252bhCisGI9zuROWjExMbQ8p8%252f6NL6kH%252fC9K%252fPHR5LIYytXpgxlHlHqRyEBPNeFkW%252bvNf7AVWGbghiroezlLnNh0BJZkpjZQXMzUtfF0MeqFrZc%252bzQwOKJE1UrsknX9Kn2tot%252f2oHASulYrRH9WXi%252bBV7F1nb%252brVbItu4zuaPXMJtMoQ8i%252fZ1B8AMa3O5De6UfvRyks1Ufik%252fCVS%252fJ6oCfoVzT9FCULBGd8JgZw7xU%252b9l55VOiGO86WCPiYq7DlVozkbBWZSCEiN4zxZVgHSK9rmpFt8YiTMEytkImZQHia6n3S36uXpl%252fSX0NMgbLJqhvCRR3%252b43iVA%252fTHsoEmc7Qw5D6hYGAireHR15j6%252fhIG4fjGIfhTc30WM1k9uDE7uF48YklwUVNTziqyGer%252bSPQmviP1gE3qunEVS7t9bbKX1cSgRzRyLwMU3MhcEG3X0tYOCgtGLm5t77sfZyfJ9UyuVAW0!%20%252foqnQbTd1eblWDDfhp1ewPaHDlgmvd%252ffpV0ZNaCnMsJsGUptk%252baekRGl4AQOA74%252bLsAZP3N6ktQ1CEZVxSI1nKV1zVsYFhzUiJp%252b7wNSCAxwtaM3c7%252fdBSz4m40rPN0nbes7vbUmOvRHoXPQpXYvkbTdEqxXH92f4gS7oWFw38j8ygWKthjmDZH8%253d">Mapquest</a> or <a href="http://www.unirel.vt.edu/directions/">Virginia Tech</a></p>
+	
+	<div id="map" style="width: 600px; height:500px"></div>
+    
+	<script type="text/javascript">
+    //<![CDATA[
+
+	var chapelHTML = '<div style="width: 235px; font-size: small"><p><strong>War Memorial Chapel</strong><br />Virginia Tech<br />Blacksburg, VA 24060</p> <a href="http://www.mapquest.com/maps/map.adp?email=1&amp;mapdata=UAm0U3b9NY0uRgi%252f4RTJZ%252byw7nnUQhpMw0zfiI7%252feW%252bSMQFwjS1W40H%252bh%252bA7QcOVOaPcDvxbhIt%252bs1qZJn%252b3WaW1wVn%252b%252bMKKyf2A78O%252fyM%252ffq6o7IxWFaaoN9Qf2zaKx3fCRxy7aOJlVIlcQOUaigx0ioaI%252bo3yLpnqn2XUqNt0eHCq%252bFR75eBDdAKjfMWZNU8dIH6fMH56h1P9BACP2xQIbsyijZQZAS%252bzYTSTvp%252bARkULdCQ4s8S34H2jzJZ9DoxfHzprSj06zUpUMkquHgl39DSGrbpfvfa9Z5%252bpucmwM9iqMBsGSD2kemxz%252bhCisGI9zuROWjExMbQ8p8%252f6NL6kH%252fC9K%252fPHR5LIYytXpgxlHlHqRyEBPNeFkW%252bvNf7AVWGbghiroezlLnNh0BJZkpjZQXMzUtfF0MeqFrZc%252bzQwOKJE1UrsknX9Kn2tot%252f2oHASulYrRH9WXi%252bBV7F1nb%252brVbItu4zuaPXMJtMoQ8i%252fZ1B8AMa3O5De6UfvRyks1Ufik%252fCVS%252fJ6oCfoVzT9FCULBGd8JgZw7xU%252b9l55VOiGO86WCPiYq7DlVozkbBWZSCEiN4zxZVgHSK9rmpFt8YiTMEytkImZQHia6n3S36uXpl%252fSX0NMgbLJqhvCRR3%252b43iVA%252fTHsoEmc7Qw5D6hYGAireHR15j6%252fhIG4fjGIfhTc30WM1k9uDE7uF48YklwUVNTziqyGer%252bSPQmviP1gE3qunEVS7t9bbKX1cSgRzRyLwMU3MhcEG3X0tYOCgtGLm5t77sfZyfJ9UyuVAW0!%20%252foqnQbTd1eblWDDfhp1ewPaHDlgmvd%252ffpV0ZNaCnMsJsGUptk%252baekRGl4AQOA74%252bLsAZP3N6ktQ1CEZVxSI1nKV1zVsYFhzUiJp%252b7wNSCAxwtaM3c7%252fdBSz4m40rPN0nbes7vbUmOvRHoXPQpXYvkbTdEqxXH92f4gS7oWFw38j8ygWKthjmDZH8%253d">Get Driving Directions to the Wedding</a></div>';
+	
+	var stadiumHTML = '<div style="width: 235px; font-size: small"><p><strong>Lane Stadium</strong><br />Virginia Tech<br />Blacksburg, VA 24060</p> <a href="http://www.mapquest.com/maps/map.adp?email=1&mapdata=UAm0U3b9NY1lE841mK9qPXy8pYpPdjwDGcTGHQRDT1Mq7N9gF9gLKxbsAeZEznNikF2SIzwJ0dXBd8ujM3eIR0fyhjlzs%252bYYXCdSl665PNb%252f0l3gckDSkd6hoibPszpalgnWV7lFX1OnPZOPCs2vVXOj5Q6KW8W5cFhRiXCONX2Bbr4GPBQGFH2GbHLOxhGNbem1f1IMFKGxUwyh9J37p815Kz3PX5Nmf5kBqFHYcWwXYoreGiQFOshRAPkO%252biPYg%252fHQgRV5OeGWYqb7V1UPCnC84AG4GTGpnsauZuEUFJsXXwfeZfAQMxu7WW5Y%252bVBOUDOJFjk9xwnIcCm9mQ2cvDYhmckfP3qeZn0rr0L0Q%252bFzcnltxq0L8c%252f4pYN4ywmfCmJGNKkU3VJlNAf9XybMHSZQ2lAChLEaLVxw6n3%252bResSzer2Aef7eZ3eqXv7gAPPfijyPqnfEkSkD%252baQE0vIeCxDLE5xX2qxxIbn6pD86CBqA5DOHaX2DNNHKiQWBxkPpvCWjllTdI3QcuZCeV4YuFxqHe5m%252bUbQMJXLqVcbolXcnF%252fQMp4tKREhtwi4sPhtU025EwLal3Ltio0TQZXHcBsK9QheFE08WEYGBON0NDhbnGsHNl8XKRyL2%252bGknT4zfTAHDy0XCzJ6mzKtWFaiPu2HkToHC2oZol5WHMuPAoSvqg9v%252b919mowyXWR%252fLOIg9XbhYc2HUymf5%252f16q6dcpinreJLdSmeukEG5l0ZEzOpNHIT9js742HJFBbOylXK3vZVVXGeZPJxcYS6GwfJEr2otppioJv%252bKCbqQfwJ%252bOCx3Vv%252bQx%252bZfcht9d8%252ba5RQDjVHRtnGhqqTMV1E!%20q%252f8tepLLludlyORSUqiDfR1zUdr1Kf%252f96xPlBah47fknTIS8XO7y8QkSoFOXZeAasiS6HsE%252b%252b9qjVz7ho84k8NJXSDrD7ONgNKT1M1KmkO8sGnLvI8QaVdHN1yZc%253d">Get Driving Directions to the Reception</a></div>';
+	
+    function loadMap() {
+	      var map = new GMap(document.getElementById("map"));
+	      map.addControl(new GSmallMapControl());
+	      map.centerAndZoom(new GPoint(-80.42033, 37.228996), 3);
+	      var marker = new GMarker(new GPoint(-80.42033, 37.228996));
+	      map.addOverlay(marker);
+	      GEvent.addListener(marker, 'click', function() {
+	        marker.openInfoWindowHtml(chapelHTML);
+	      });
+	      marker.openInfoWindowHtml(chapelHTML);
+
+	      var marker2 = new GMarker(new GPoint(-80.418044, 37.219744));
+	      map.addOverlay(marker2);
+	      GEvent.addListener(marker2, 'click', function() {
+	        marker2.openInfoWindowHtml(stadiumHTML);
+	      });
+	    }
+    loadMap();
+
+    //]]>
+    </script>
+	
+	<p id="airport">The nearest airport to Blacksburg, VA is the <a href="http://www.roanokeregionalairport.com/">Roanoke Regional Airport</a></p>
+	
+	<div id="middlestuff">
+	
+	<h2 id="lodginginfo">the lodging info</h2>
+	<h3>the nearest hotels to the wedding are:</h3>
+	<ul>
+		<li><h4>Econo Lodge</h4>
+		2430 Roanoke St
+		Christiansburg, VA 24073
+		<em>(540) 382-6161</em></li>
+		<li><h4>Ameri Suites</h4>
+		1020 Plantation Rd
+		Blacksburg, VA 24060
+		<em>(800) 833-1516</em></li>
+		<li><h4>Red Carpet Inn</h4>
+		1615 S Main St
+		Blacksburg, VA 24060
+		<em>(540) 552-4011</em></li>
+	</ul>
+	
+	</div>
+	
+	<div id="endstuff">
+	
+	<div id="rsvpblock">
+		
+		<h2 id="rsvp">rsvp</h2>
+		<p id="rsvpform">Please let us know if you are coming by filling out our <a href="http://myobie.wufoo.com/forms/rsvp/">rsvp form.</a></p>
+		
+	</div>
+	
+	<h2 id="gifts">gifts</h2>
+	<p id="registries">
+		For those interested, we have wedding registries at <a href="http://ww1.williams-sonoma.com/reg/guestsignin.cfm?src=regsfindreg%2Fregsfindreg%2Fregsfindreg%2Fregsfindreg%2Fregslanding&amp;regid=1490163">Williams Sonoma</a> and <a href="http://www.target.com/gp/registry/registry.html/ref=cm_cw_sr_1/602-0552037-8268664?%5Fencoding=UTF8&amp;type=wedding&amp;id=3GDXP6162NG2Y&amp;jsebd=1">Target</a>. 
+	</p>
+	
+	<h2 id="contact">contact information</h2>
+	<p id="emailus">If, for any reason, you need to contact us: email <a href="mailto:info@theheraldwedding.com">info@theheraldwedding.com</a></p>
+	
+	</div>
+
+</body>
+</html>
